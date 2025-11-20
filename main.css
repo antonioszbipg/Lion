@@ -1,0 +1,54 @@
+.grid-layout {
+display: grid;
+grid-template-areas:
+"header header"
+"aside content"
+"footer footer";
+grid-template-columns: 1fr 2fr;
+gap: 3px;
+background-color: dodgerblue;
+padding: 5px;
+}
+
+.box {
+background: darkblue;
+border-radius: 10px;
+}
+
+.header {
+grid-area: header;
+background: blue;
+}
+
+.aside {
+grid-area: aside;
+background-color: darkblue;
+}
+
+.footer{
+grid-area: footer;
+text-align: center;
+}
+
+@media (max-width: 600px) {
+.grid-layout{
+grid-template-areas:
+"header"
+"aside"
+"content"
+"footer";
+grid-template-columns: 1fr;
+}
+
+}
+body{
+    background-color: navy;
+}
+body{
+    color: white;
+}
+
+figure img{
+    width: 100%;
+    max-width: 400px;
+}
